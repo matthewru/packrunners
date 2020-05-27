@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<sv:node sv:name="courses" xmlns:sv="http://www.jcp.org/jcr/sv/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<sv:node xmlns:sv="http://www.jcp.org/jcr/sv/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" sv:name="courses">
   <sv:property sv:name="jcr:primaryType" sv:type="Name">
     <sv:value>mgnl:contentNode</sv:value>
   </sv:property>
@@ -1543,19 +1543,40 @@
                     <sv:value>true</sv:value>
                   </sv:property>
                 </sv:node>
-                <sv:node sv:name="weighted">
+                <sv:node sv:name="isWeighted">
                   <sv:property sv:name="jcr:primaryType" sv:type="Name">
                     <sv:value>mgnl:contentNode</sv:value>
                   </sv:property>
                   <sv:property sv:name="class" sv:type="String">
-                    <sv:value>info.magnolia.ui.form.field.definition.CheckboxFieldDefinition</sv:value>
-                  </sv:property>
-                  <sv:property sv:name="type" sv:type="String">
-                    <sv:value>Boolean</sv:value>
+                    <sv:value>info.magnolia.ui.form.field.definition.SelectFieldDefinition</sv:value>
                   </sv:property>
                   <sv:property sv:name="required" sv:type="String">
-                    <sv:value>false</sv:value>
+                    <sv:value>true</sv:value>
                   </sv:property>
+                  <sv:property sv:name="type" sv:type="String">
+                    <sv:value>Long</sv:value>
+                  </sv:property>
+                  <sv:node sv:name="options">
+                    <sv:property sv:name="jcr:primaryType" sv:type="Name">
+                      <sv:value>mgnl:contentNode</sv:value>
+                    </sv:property>
+                    <sv:node sv:name="No">
+                      <sv:property sv:name="jcr:primaryType" sv:type="Name">
+                        <sv:value>mgnl:contentNode</sv:value>
+                      </sv:property>
+                      <sv:property sv:name="value" sv:type="String">
+                        <sv:value>0</sv:value>
+                      </sv:property>
+                    </sv:node>
+                    <sv:node sv:name="Yes">
+                      <sv:property sv:name="jcr:primaryType" sv:type="Name">
+                        <sv:value>mgnl:contentNode</sv:value>
+                      </sv:property>
+                      <sv:property sv:name="value" sv:type="String">
+                        <sv:value>1</sv:value>
+                      </sv:property>
+                    </sv:node>
+                  </sv:node>
                 </sv:node>
                 <sv:node sv:name="prerequisite">
                   <sv:property sv:name="jcr:primaryType" sv:type="Name">
@@ -1568,7 +1589,7 @@
                     <sv:value>true</sv:value>
                   </sv:property>
                   <sv:property sv:name="required" sv:type="String">
-                    <sv:value>false</sv:value>
+                    <sv:value>true</sv:value>
                   </sv:property>
                 </sv:node>
                 <sv:node sv:name="level">
@@ -1592,24 +1613,27 @@
                   <sv:property sv:name="class" sv:type="String">
                     <sv:value>info.magnolia.ui.form.field.definition.SelectFieldDefinition</sv:value>
                   </sv:property>
+                  <sv:property sv:name="type" sv:type="String">
+                    <sv:value>Long</sv:value>
+                  </sv:property>
                   <sv:node sv:name="options">
                     <sv:property sv:name="jcr:primaryType" sv:type="Name">
                       <sv:value>mgnl:contentNode</sv:value>
                     </sv:property>
-                    <sv:node sv:name="1-semester">
+                    <sv:node sv:name="1-Semester">
                       <sv:property sv:name="jcr:primaryType" sv:type="Name">
                         <sv:value>mgnl:contentNode</sv:value>
                       </sv:property>
-                      <sv:property sv:name="value" sv:type="String">
-                        <sv:value>1 Semester</sv:value>
+                      <sv:property sv:name="value" sv:type="Long">
+                        <sv:value>1</sv:value>
                       </sv:property>
                     </sv:node>
-                    <sv:node sv:name="2-semesters">
+                    <sv:node sv:name="2-Semesters">
                       <sv:property sv:name="jcr:primaryType" sv:type="Name">
                         <sv:value>mgnl:contentNode</sv:value>
                       </sv:property>
-                      <sv:property sv:name="value" sv:type="String">
-                        <sv:value>Full Year</sv:value>
+                      <sv:property sv:name="value" sv:type="Long">
+                        <sv:value>2</sv:value>
                       </sv:property>
                     </sv:node>
                   </sv:node>
@@ -1638,11 +1662,11 @@
                   <sv:property sv:name="i18n" sv:type="String">
                     <sv:value>true</sv:value>
                   </sv:property>
-                  <sv:property sv:name="rows" sv:type="String">
-                    <sv:value>2</sv:value>
-                  </sv:property>
                   <sv:property sv:name="required" sv:type="String">
                     <sv:value>true</sv:value>
+                  </sv:property>
+                  <sv:property sv:name="rows" sv:type="String">
+                    <sv:value>2</sv:value>
                   </sv:property>
                 </sv:node>
                 <sv:node sv:name="image">
@@ -1682,11 +1706,14 @@
                   <sv:property sv:name="jcr:primaryType" sv:type="Name">
                     <sv:value>mgnl:contentNode</sv:value>
                   </sv:property>
+                  <sv:property sv:name="description" sv:type="String">
+                    <sv:value>courses.detail.editor.schools.description</sv:value>
+                  </sv:property>
                   <sv:property sv:name="extends" sv:type="String">
                     <sv:value>/modules/categorization/dialogs/generic/tabCategorization/fields/categories</sv:value>
                   </sv:property>
                   <sv:property sv:name="label" sv:type="String">
-                    <sv:value>courses.detail.editor.destination.label</sv:value>
+                    <sv:value>courses.detail.editor.schools.label</sv:value>
                   </sv:property>
                   <sv:node sv:name="field">
                     <sv:property sv:name="jcr:primaryType" sv:type="Name">
@@ -1718,31 +1745,6 @@
                       <sv:value>/course-types</sv:value>
                     </sv:property>
                   </sv:node>
-                </sv:node>
-                <sv:node sv:name="date">
-                  <sv:property sv:name="jcr:primaryType" sv:type="Name">
-                    <sv:value>mgnl:contentNode</sv:value>
-                  </sv:property>
-                  <sv:property sv:name="class" sv:type="String">
-                    <sv:value>info.magnolia.ui.form.field.definition.DateFieldDefinition</sv:value>
-                  </sv:property>
-                  <sv:property sv:name="time" sv:type="String">
-                    <sv:value>false</sv:value>
-                  </sv:property>
-                  <sv:property sv:name="type" sv:type="String">
-                    <sv:value>Date</sv:value>
-                  </sv:property>
-                </sv:node>
-                <sv:node sv:name="author">
-                  <sv:property sv:name="jcr:primaryType" sv:type="Name">
-                    <sv:value>mgnl:contentNode</sv:value>
-                  </sv:property>
-                  <sv:property sv:name="class" sv:type="String">
-                    <sv:value>info.magnolia.ui.form.field.definition.TextFieldDefinition</sv:value>
-                  </sv:property>
-                  <sv:property sv:name="defaultValue" sv:type="String">
-                    <sv:value>Magnolia Travels</sv:value>
-                  </sv:property>
                 </sv:node>
               </sv:node>
             </sv:node>
@@ -1799,4 +1801,3 @@
     </sv:node>
   </sv:node>
 </sv:node>
-

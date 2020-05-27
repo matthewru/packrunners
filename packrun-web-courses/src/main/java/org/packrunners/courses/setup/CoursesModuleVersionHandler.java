@@ -61,7 +61,7 @@ public class CoursesModuleVersionHandler extends DefaultModuleVersionHandler {
                 new ArrayDelegateTask("Re-Bootstrap category content for packrunweb courses",
                     "Re-bootstrap category content to account for all changes",
                     new BootstrapSingleResource("", "",
-                        "/mgnl-bootstrap-samples/courses/category.destinations.yaml"),
+                            "/mgnl-bootstrap-samples/courses/category.schools.yaml"),
                     new BootstrapSingleResource("", "",
                         "/mgnl-bootstrap-samples/courses/category.course-types.yaml")),
                 new BootstrapSingleResource("Re bootstrap courses content", "",
