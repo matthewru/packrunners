@@ -61,11 +61,11 @@ public class CoursesModuleVersionHandler extends DefaultModuleVersionHandler {
                 new ArrayDelegateTask("Re-Bootstrap category content for packrunweb courses",
                     "Re-bootstrap category content to account for all changes",
                     new BootstrapSingleResource("", "",
-                            "/mgnl-bootstrap-samples/courses/category.schools.yaml"),
+                            "/mgnl-bootstrap-samples/courses/category.schools.xml"),
                     new BootstrapSingleResource("", "",
-                        "/mgnl-bootstrap-samples/courses/category.course-types.yaml")),
+                        "/mgnl-bootstrap-samples/courses/category.course-types.xml")),
                 new BootstrapSingleResource("Re bootstrap courses content", "",
-                    "/mgnl-bootstrap-samples/courses/courses.packrunweb.yaml"))))
+                    "/mgnl-bootstrap-samples/courses/courses.NNHS-Courses.xml"))))
 //                new FolderBootstrapTask("/mgnl-bootstrap-samples/courses/assets/"),
 //                new NodeExistsDelegateTask("", "", WEBSITE, "/packrunners/about/careers/main/06",
 //                    new OrderNodeBeforeTask("Order careers 05 node before 06", "", WEBSITE,
@@ -119,7 +119,7 @@ public class CoursesModuleVersionHandler extends DefaultModuleVersionHandler {
             IMPORT_UUID_COLLISION_REPLACE_EXISTING))
         .addTask(new BootstrapSingleResource("Re-bootstrap the courses workspace",
             "Re-bootstrap the courses workspace.",
-            "/mgnl-bootstrap-samples/courses/courses.packrunweb.yaml",
+            "/mgnl-bootstrap-samples/courses/courses.NNHS-Courses.xml",
             IMPORT_UUID_COLLISION_REPLACE_EXISTING))
         .addTask(new ArrayDelegateTask("Bootstrap Course Finder",
             "Extract files and modify the packrunweb demo.",
