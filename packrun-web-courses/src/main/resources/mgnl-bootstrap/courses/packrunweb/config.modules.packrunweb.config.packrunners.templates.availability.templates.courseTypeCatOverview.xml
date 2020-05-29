@@ -4,7 +4,7 @@
     <sv:value>mgnl:contentNode</sv:value>
   </sv:property>
   <sv:property sv:name="id" sv:type="String">
-    <sv:value>courses:pages/destinationCatOverview</sv:value>
+    <sv:value>courses:pages/courseTypeCatOverview</sv:value>
   </sv:property>
 </sv:node>
 

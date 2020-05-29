@@ -16,11 +16,11 @@ areas:
     type: list
     availableComponents:
       courseTypeOverviewHeader:
-        id: courses:components/tourTypeOverviewHeader
+        id: courses:components/courseTypeOverviewHeader
       tourListFeaturedRowByDestination:
-        id: courses:components/tourListFeaturedRow
+        id: courses:components/courseListFeaturedRow
       tourListByDestination:
-        id: courses:components/tourList
+        id: courses:components/courseList
       social:
         id: packrunweb:components/social
   footer:

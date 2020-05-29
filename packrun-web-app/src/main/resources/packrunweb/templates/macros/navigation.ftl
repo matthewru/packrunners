@@ -9,7 +9,7 @@ Uncommented and adjusted section for resolving menu for destination and packrunw
 
         [#assign navItems = navfn.navItems(navParentItem)]
         [#list navItems as navItem]
-            [#if navfn.hasTemplateSubtype(navItem, "destinationCatOverview")]
+            [#if navfn.hasTemplateSubtype(navItem, "courseTypeCatOverview")]
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
                         ${navItem.navigationTitle!navItem.title!navItem.@name}
