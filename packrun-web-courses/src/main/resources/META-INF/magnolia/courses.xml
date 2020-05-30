@@ -71,6 +71,7 @@
       <name>magnolia</name>
       <workspaces>
         <workspace>courses</workspace>
+        <workspace>studyGuides</workspace>
       </workspaces>
       <nodeTypeFile>/mgnl-nodetypes/magnolia-course-nodetypes.xml</nodeTypeFile>
     </repository>
